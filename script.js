@@ -36,7 +36,7 @@ function loadQuestion() {
   options.forEach((option, index) => {
       option.innerText = quizData[currentQuestion].options[index];
       option.disabled = false;
-      option.style.backgroundColor = "#433D8B";
+      option.style.backgroundColor = "#EDF4F2";
   });
   document.getElementById("next-btn").style.display = "none";
   document.getElementById("result").innerText = "";
