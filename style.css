@@ -257,18 +257,21 @@ img {
   }
 
 
-/* slide show part  */
+/* --slide show part--  */
+/* very hard unable to do i cry */
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.slide-container {
     position: relative;
-    width: 60vw;
-    height: 60vh;
+    top: 50%;
+    left: 50%;
+
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+    width: 100%;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
