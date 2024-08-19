@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer> </script>
 </head>
 <body>
+
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+  <section class="hero section">
+    <div class="image-container">
+      <div class="txt">
+        <h1>Happy Birthday</h1>
+        <p>My friend & my Homie</p>
+        <p class="life">For life</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="quiz_shit">
+    <div class="quiz-container" id="quiz">
+      <h2>Birthday Trivia</h2>
+      <div id="question"></div>
+      <div class="options">
+          <button class="option" onclick="selectAnswer(0)"></button>
+          <button class="option" onclick="selectAnswer(1)"></button>
+          <button class="option" onclick="selectAnswer(2)"></button>
+          <button class="option" onclick="selectAnswer(3)"></button>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+      <div id="result"></div>
+  </div>
+  </section>
+
+
+  <section class="cards section" id="section2">
+    <div class="card-container">
+      <div class="card">
+        <h3>Card Title 1</h3>
+        <p>Card info bitch</p>
+      </div>
+      <div class="card">
+        <h3>Card Title 2</h3>
+        <p>Card info bitch</p>
+      </div>
+      <div class="card">
+        <h3>Card Title 3</h3>
+        <p>Card info bitch</p>
+      </div>
+    </div>
     
+  </section>
+
 </body>
 </html>
