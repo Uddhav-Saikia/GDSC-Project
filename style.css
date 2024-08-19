@@ -5,7 +5,6 @@ html,body{
     scroll-behavior: smooth;
 }
 
-/* Style the header: fixed position (always stay at the top) */
 .header {
     position: fixed;
     top: 0;
@@ -14,14 +13,12 @@ html,body{
     background-color: #17153B;
   }
   
-  /* The progress container (grey background) */
   .progress-container {
     width: 100%;
     height: 8px;
     background: #21163b;
   }
   
-  /* The progress bar (scroll indicator) */
   .progress-bar {
     height: 8px;
     background: rgba(203, 27, 165, 0.866);
@@ -40,7 +37,7 @@ section{
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
     z-index: 1;  
 }
 
@@ -71,7 +68,7 @@ section{
     text-decoration: none;
     font-weight: lighter;
     font-size: 8em;
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family: jost, sans-serif;
     color: rgb(89, 163, 237);
     margin: 80px;
 }
@@ -147,7 +144,7 @@ img {
 
 .quiz-container {
     width: 100%;
-    max-width: 80vw;
+    max-width: 60vw;
     height: 80vh;
     margin: 50px;
     padding: 20px;
@@ -213,49 +210,136 @@ img {
     color: #C8ACD6;
 }
 
-#section1 { background-color: #3498db; }
-#section2 { background-color: #2E236C; }
+/* hoverable 
+    sidebar 
+        part */
 
-/* slideshow part */
+/* Style the links inside the sidenav */
 
-.slider {
-    width: 100%;
-    height: 510px;
-    position: relative;
+
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    margin-top: 10vh;
+    z-index: 2;
   }
   
-  .slider img {
-    width: 100%;
-    height: 500px
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #home {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+  }
+
+
+/* slide show part  */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
     position: absolute;
     top: 0;
-    left: 0;
   }
   
-  .slider img:first-child {
-    z-index: 1;
-  }
-  
-  .slider img:nth-child(2) {
-    z-index: 0;
-  }
-
-  .navigation-button {
+  /* Container for image text */
+  .caption-container {
     text-align: center;
-    position: relative;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
   }
   
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
   }
   
   .active,
-  .dot:hover {
-    background-color: #717171;
+  .demo:hover {
+    opacity: 1;
   }
