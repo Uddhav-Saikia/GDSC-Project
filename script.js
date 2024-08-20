@@ -1,11 +1,11 @@
-// scroll progress bar
+//for the thing on top
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+  document.getElementById("Bar").style.width = scrolled + "%";
 }
 
 // for quiz
@@ -88,7 +88,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("Slides");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -103,3 +103,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+//anonymous message part
+
+document.getElementById('messageForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  const messageInput = document.getElementById('messageInput');
+  const messageText = messageInput.value;
+
+  const newMessage = document.createElement('div');
+  newMessage.classList.add('message');
+  newMessage.textContent = messageText;
+
+  const messagesContainer = document.getElementById('messagesContainer');
+  messagesContainer.appendChild(newMessage);
+
+  messageInput.value = '';
+});

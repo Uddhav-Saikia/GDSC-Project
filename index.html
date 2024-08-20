@@ -8,17 +8,18 @@
 </head>
 <body>
 
+  <!-- hoverable sidebar -->
   <div class="header">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="Bar"></div>
     </div>
   </div>
 
   <!-- hoverable sidebar part -->
-  <div id="mySidenav" class="sidenav">
+  <div id="Sidebar" class="sidebar">
     <a href="#section1" id="home">Home <div>&#9655</div></a>
-    <a href="#section2" id="blog">Quiz <div>&#9655</div></a>
-    <a href="#section3" id="projects">Slides <div>&#9655</div></a>
+    <a href="#section2" id="quiz_tab">Quiz <div>&#9655</div></a>
+    <a href="#section3" id="slides_v">Slides <div>&#9655</div></a>
   </div>  
 
 
@@ -31,7 +32,7 @@
           <div class="txt">
             <h1>Happy <br> Birthday</h1>
             <p>My friend & my Homie</p>
-            <p class="life">For life</p>
+            <p class="life" id="life">For life</p>
           </div>
         </div>
   </section>
@@ -53,51 +54,49 @@
   </section>
 
   <!-- slide show part -->
+   <div style="height:7vh; background-color: var(--primary-dark) "></div>
+
    <section class="slideshow" id="section3">
     <div class="title_slide">Slideshow</div>
     <div class="slide-container">
 
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">1 / 6</div>
             <img src="./images/1.jpeg" >
         </div>
       
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">2 / 6</div>
             <img src="./images/2.jpeg" >
         </div>
       
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">3 / 6</div>
             <img src="./images/3.jpeg" >
         </div>
       
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">4 / 6</div>
             <img src="./images/4.jpeg" >
         </div>
       
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">5 / 6</div>
             <img src="./images/5.jpeg" >
         </div>
       
-        <div class="mySlides">
+        <div class="Slides">
           <div class="numbertext">6 / 6</div>
             <img src="./images/6.jpeg" >
         </div>
       
-        <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#8678;</a>
         <a class="next" onclick="plusSlides(1)">&#8680;</a>
       
-        <!-- Image text -->
         <div class="caption-container">
           <p id="caption" style="font-size: 2em; margin: 1vh;"></p>
         </div>
       
-        <!-- Thumbnail images -->
         <div class="row">
           <div class="column">
             <img class="demo cursor" src="./images/1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Ha Bhai bol">
@@ -109,7 +108,7 @@
             <img class="demo cursor" src="./images/3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Abbey Laude">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./images/4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="All the best yarr">
+            <img class="demo cursor" src="./images/4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Mai hoo Don">
           </div>
           <div class="column">
             <img class="demo cursor" src="./images/5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Smile please">
@@ -119,6 +118,21 @@
           </div>
         </div>
       </div>
+   </section>
+
+   <div style="height: 10vh; background-color: var(--primary-dark)"></div>
+
+   <section class="last">
+    <div class="anonymous-messages">
+      <h2>Leave an Anonymous Message</h2>
+      <form id="messageForm">
+          <textarea id="messageInput" placeholder="Write your message here..." required></textarea>
+          <button type="submit">Submit</button>
+      </form>
+      <div id="messagesContainer">
+          <h3>Messages:</h3>
+      </div>
+  </div>
    </section>
 
 </body>
