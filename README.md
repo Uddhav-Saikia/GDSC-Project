@@ -1,19 +1,18 @@
 # GDSC-Project
 
 
-color themes re-adjustment
-animations all over
-font: add google font and make it more aesthetic 
+color themes re-adjustment // to be done further
+font: add google font and make it more aesthetic and work a bit on the fonts
+add br to divide sections
 
-
-boxes to explain the quiz with animation in them
-night mode
+boxes to explain the quiz with animation in them & animate those shit
 editing the sidenav to be open when a particular section is up
 edit the sidenav icons
 making the slideshow fit in better with the site
 
 make a starting veil on the site which opens up and gives you the main site after that
-
+animations all over
+night mode
 
 
 animations: 
