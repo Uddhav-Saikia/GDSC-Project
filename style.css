@@ -49,6 +49,7 @@ a, button {
 
 section{
     height: 100vh;
+    position: relative;
     background-color: var(--primary-color);
     margin: 0;
     padding: 0;
@@ -361,9 +362,14 @@ img {
 
 
   /* anonymous message part */
-  
+
+
 .anonymous-messages {
+    position: absolute;
+    left: 23vw;
+    top: 30vh;
     max-width: 600px;
+    min-width: 50vw;
     margin: auto;
     padding: 20px;
     background-color: white;
@@ -371,8 +377,15 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
+.anonymous-messages h2, h3 {
     color: #3498db;
+}
+
+.last h1 {
+  position: absolute;
+  left:40vw;
+  top:10vh;
+  font-size: 4em;
 }
 
 form {
@@ -380,28 +393,28 @@ form {
 }
 
 textarea {
-    width: 100%;
+    width: 95%;
     height: 100px;
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 16px;
 }
 
-button {
+.anonymous-messages button {
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #2980b9;
+.anonymous-messages button:hover {
+    background-color: #2980b9;  
 }
 
 #messagesContainer {
