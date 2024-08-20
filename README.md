@@ -1,7 +1,6 @@
 # GDSC-Project
 
 
-bottom panel : social media stuff and links
 color themes re-adjustment
 animations all over
 font: add google font and make it more aesthetic 
