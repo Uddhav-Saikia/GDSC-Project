@@ -3,8 +3,9 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" fill="%236F4840"/></svg>') 6 6, auto;
-}
+    background-color: var(--background-color);
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="%23e3142d"/></svg>') 6 6, auto;
+  }
 
 a, button {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" stroke="%236F4840" stroke-width="2" fill="none"/><line x1="6" y1="2" x2="6" y2="10" stroke="%236F4840" stroke-width="2"/><line x1="2" y1="6" x2="10" y2="6" stroke="%236F4840" stroke-width="2"/></svg>') 6 6, auto;
@@ -21,12 +22,31 @@ a, button {
     --text-color-norm: #7D746F;
     --sidebar-color: #a6483e86;
     --progress-bar: #522120e8;
+    --footer-color:#502224;
 }
 
+.bar_one{
+  height: 10vh;
+  position: relative;
+  background-color: var(--background-color);
+}
 
+hr{
+  margin: 0 auto;
+  padding: 0;
+  width: 80vw;
+  height: 0.8px;
+  background-color: var(--text-color-extra);
+}
+
+.space_afterquz{
+    height: 8vh;
+}
 
 #section3 {
     background-color: var(--background-color);
+    margin-bottom: 10vh;
+    /* margin-top: 5vh; */
 }
 
 .header {
@@ -159,7 +179,7 @@ img {
 */
 
 .quiz_shit{
-    padding: 20px;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,8 +316,7 @@ img {
     top:1.5vh;
     left:39vw;
     font-size: 4em;
-    text-decoration: underline;
-    
+
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -337,7 +356,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: var(--secondary-color);
+    color: var(--background-color);
     font-weight: bold;
     font-size: 40px;
     border-radius: 0 3px 3px 0;
@@ -379,7 +398,7 @@ img {
     text-align: center;
     background-color: var(--background-color-two);
     padding: 2px 16px;
-    color: var(--primary-dark);
+    color: var(--text-color-secondary);
 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -426,7 +445,7 @@ img {
 }
 
 .anonymous-messages h2, h3 {
-    color: #3498db;
+    color: var(--text-color-extra);
 }
 
 .last h1 {
@@ -434,6 +453,12 @@ img {
   left:40vw;
   top:10vh;
   font-size: 4em;
+  color: var(--text-color-extra);
+
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 form {
@@ -453,7 +478,7 @@ textarea {
 
 .anonymous-messages button {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: var(--sidebar-color);
     color: white;
     border: none;
     border-radius: 4px;
@@ -487,7 +512,7 @@ textarea {
  footer {
   text-align: center;
   padding: 20px;
-  background-color: #222;
+  background-color: var(--footer-color);
   color: #fff;
 }
 
@@ -509,6 +534,21 @@ textarea {
   transition: background-color 0.3s;
 }
 
+.social-icons .icon.github {
+  background-color: #090909;
+}
+.social-icons .icon.instagram {
+  background-color: rgb(226, 111, 130);
+}
+.social-icons .icon.twitter {
+  background-color: #1DA1F2;
+}
+.social-icons .icon.facebook {
+  background-color: #1877F2;
+}
+
+
+
 .social-icons .icon:hover {
   background-color: #555;
 }
@@ -516,3 +556,8 @@ textarea {
 .social-icons .icon i {
   vertical-align: middle;
 }
+
+.fa-instagram{
+  margin-bottom: 2px;
+}
+
