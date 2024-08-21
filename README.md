@@ -1,20 +1,22 @@
 # GDSC-Project
 
-
-add br to divide sections
-
+<!-- edit the sidenav icons and add another side nav  -->
+<!-- add a go to top arrow button (fixed positioning)  -->
 boxes to explain the quiz with animation in them & animate those shit
 editing the sidenav to be open when a particular section is up
-edit the sidenav icons
-edit the footer a bit
-making the slideshow fit in better with the site
-
+find better footer designs 
+making the slideshow fit in better with the site basically shift it a lil to right and put some inspo
+-txt on its left
+media query
 make a starting veil on the site which opens up and gives you the main site after that
 animations all over
+
 night mode
 
 
-animations: 
+
+
+********animations********: 
 copy some from stratis bakas
 main navbar on top appears
 
@@ -22,6 +24,8 @@ the text in the explaining box appears as you scroll into it
 the message board and the slideshow slowly move up as you scroll or sum
 put some pics of related items and make them move on scroll too
 each link should do the stratis bakas strikethrough ani
+there are circles etc everywhere n they move 
+
 
 
 

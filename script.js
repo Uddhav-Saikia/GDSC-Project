@@ -1,4 +1,4 @@
-//for the thing on top
+//for the thing on top...like progress bar types
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -121,3 +121,58 @@ document.getElementById('messageForm').addEventListener('submit', function(event
 
   messageInput.value = '';
 });
+
+//scroll positioning for sidebar
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('home');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  let windowHeight= window.innerHeight;
+  let VH = windowHeight/100;
+
+  if (scrollPosition > -50*VH && scrollPosition < 80*VH) { 
+    element.style.left = '0'; 
+  } else {
+    element.style.left = '-70px';
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('quiz_tab');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  let windowHeight= window.innerHeight;
+  let VH = windowHeight/100;
+
+  if (scrollPosition > 80*VH && scrollPosition < 200*VH) { 
+    element.style.left = '0'; 
+  } else {
+    element.style.left = '-70px';
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('slides_v');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  let windowHeight= window.innerHeight;
+  let VH = windowHeight/100;
+
+  if (scrollPosition > 200*VH && scrollPosition < 325*VH) { 
+    element.style.left = '0'; 
+  } else {
+    element.style.left = '-70px';
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('anon_txt');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  let windowHeight= window.innerHeight;
+  let VH = windowHeight/100;
+
+  if (scrollPosition > 325*VH && scrollPosition < 480*VH) { 
+    element.style.left = '0'; 
+  } else {
+    element.style.left = '-70px';
+  }
+});
+

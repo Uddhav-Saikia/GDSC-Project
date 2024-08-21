@@ -259,12 +259,12 @@ img {
     color: #C8ACD6;
 }
 
-/* hoverable sidebar-colo 
+/* hoverable sidebar
         part */
 
 #Sidebar a {
     position: fixed; 
-    left: -80px; 
+    left: -70px; 
     transition: 0.3s; 
     padding: 15px; 
     width: 100px; 
@@ -302,6 +302,12 @@ img {
 
   }
 
+  #anon_txt{
+    top: 230px;
+    background-color: var(--sidebar-color); 
+    border: 2px solid var(--primary-color);
+  }
+
 
 /* --slide show part--  */
 /* very hard unable to do i cry */
@@ -319,9 +325,9 @@ img {
 
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    color: var(--text-color-secondary);
+    color: var(--text-color);
 }
 
 .slide-container {
@@ -389,8 +395,8 @@ img {
     padding: 8px 12px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     position: absolute;
-    top: 1.5vh;
-    right: 1vw;
+    top: 3vh;
+    right: 1.8vw;
     z-index: 1;
   }
   
@@ -400,11 +406,10 @@ img {
     padding: 2px 16px;
     color: var(--text-color-secondary);
 
-    font-family: "Montserrat", sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-style: italic;
   }
   
   .row:after {
@@ -503,6 +508,7 @@ textarea {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 
@@ -538,7 +544,7 @@ textarea {
   background-color: #090909;
 }
 .social-icons .icon.instagram {
-  background-color: rgb(226, 111, 130);
+  background-color: #e4398c;
 }
 .social-icons .icon.twitter {
   background-color: #1DA1F2;
