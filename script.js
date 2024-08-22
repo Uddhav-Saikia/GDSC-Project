@@ -176,3 +176,29 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+//floating the quiz bar upwards 
+
+window.addEventListener('scroll', function() {
+  const box = document.querySelector('.quiz-container');
+  const scrollPosition = window.scrollY;
+  const moveUp = scrollPosition * 0.2;
+  box.style.transform = `translateY(-${moveUp}px)`;
+});
+
+window.addEventListener('scroll', function() {
+  const box = document.querySelector('.slide-container');
+  const scrollPosition = window.scrollY;
+  const moveUp = scrollPosition * 0.06;
+  let vh=scrollPosition/100;
+  if(scrollPosition > 90*vh)
+  box.style.transform = `translateX(-${moveUp}px)`;
+});
+
+window.addEventListener('scroll', function() {
+  const box = document.querySelector('.anonymous-messages');
+  const scrollPosition = window.scrollY;
+  const moveUp = scrollPosition * 0.15;
+  box.style.transform = `translateY(-${moveUp}px)`;
+});
+

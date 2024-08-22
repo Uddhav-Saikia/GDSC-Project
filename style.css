@@ -184,12 +184,13 @@ img {
 
 .quiz_shit{
     padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .quiz-container {
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
     width: 100%;
     max-width: 60vw;
     height: 80vh;
@@ -199,6 +200,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease-out;
 
 }
 
@@ -342,13 +344,14 @@ img {
 
 .slide-container {
     position: absolute;
-    top: 15%;
-    left: 30%;
+    top: 20vh;
+    left: 55vw;
     width: 40vw;
     padding: 20px;
     background-color: var(--background-color-two);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
+    transition: transform 0.3s ease-out;
 }
 
 .slide-container img{
@@ -454,7 +457,7 @@ img {
 .anonymous-messages {
     position: absolute;
     left: 23vw;
-    top: 30vh;
+    top: 80vh;
     max-width: 600px;
     min-width: 50vw;
     margin: auto;
@@ -462,6 +465,7 @@ img {
     background-color: var(--background-color-three);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
 }
 
 .anonymous-messages h2, h3 {
