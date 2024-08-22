@@ -25,7 +25,7 @@ a, button {
     --text-color-norm: #7D746F;
     --sidebar-color: #a6483e86;
     --sidebar-hover:#a6483ed1;
-    --progress-bar: #522120e8;
+    --progress-bar: rgb(67, 67, 237);
     --footer-color:#502224;
 }
 
@@ -347,6 +347,7 @@ img {
     width: 40vw;
     padding: 20px;
     background-color: var(--background-color-two);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
 }
 

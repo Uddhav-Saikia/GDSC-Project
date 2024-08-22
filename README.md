@@ -2,7 +2,8 @@
 
 <!-- edit the sidenav icons and add another side nav  -->
 <!-- add a go to top arrow button (fixed positioning)  -->
-find better footer designs 
+<!-- find better footer designs  -->
+add shadows to the slideshow
 boxes to explain the quiz with animation in them & animate those shit
 editing the sidenav to be open when a particular section is up
 making the slideshow fit in better with the site basically shift it a lil to right and put some inspo
