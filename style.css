@@ -26,7 +26,7 @@ a, button {
     --sidebar-color: #a6483e86;
     --sidebar-hover:#a6483ed1;
     --progress-bar: rgb(67, 67, 237);
-    --footer-color:#502224;
+    --footer-color: var(--background-color-three);
 }
 
 .bar_one{
@@ -186,6 +186,16 @@ img {
 .quiz_shit{
     padding: 50px;
     position: relative;
+}
+
+.quiz_info{
+  position: absolute;
+  height: 60vh;
+  width: 50vw;
+  background-color: var(--background-color-three);
+  top: 30vh;
+  left: 80vw;
+
 }
 
 .quiz-container {
@@ -386,12 +396,12 @@ img {
   }
   
   .topright{
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 20px;
     z-index: 2;
     font-size: 4em;
-    color: var(--background-color);
+    color: var(gray);
   }
 
   .topright:hover{
@@ -595,12 +605,16 @@ footer{
 footer .footer_con {
   position: absolute;
   border-radius: 20px 20px 0 0;
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--sidebar-color);
   border-bottom-color: var(--footer-color);
   top:3vh;
   left: 2vw;
   height: 19vh;
   width: 95vw;
+}
+
+footer p{
+  color: #090909;
 }
 
 
@@ -623,7 +637,7 @@ footer .footer_con {
   position: absolute;
   background-color: #293d49;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  top: 280vh;
+  top: 270vh;
   left: 15vw;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.35s ease-out;
 }

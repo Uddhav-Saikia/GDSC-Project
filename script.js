@@ -132,8 +132,10 @@ window.addEventListener('scroll', function() {
 
   if (scrollPosition > -50*VH && scrollPosition < 80*VH) { 
     element.style.left = '0'; 
+    element.style.backgroundColor = '#a6483ed1'; 
   } else {
     element.style.left = '-70px';
+    element.style.backgroundColor = '#a6483e86';
   }
 });
 
@@ -145,8 +147,10 @@ window.addEventListener('scroll', function() {
 
   if (scrollPosition > 80*VH && scrollPosition < 200*VH) { 
     element.style.left = '0'; 
+    element.style.backgroundColor = '#a6483ed1';
   } else {
     element.style.left = '-70px';
+    element.style.backgroundColor = '#a6483e86';
   }
 });
 
@@ -158,8 +162,10 @@ window.addEventListener('scroll', function() {
 
   if (scrollPosition > 200*VH && scrollPosition < 325*VH) { 
     element.style.left = '0'; 
+    element.style.backgroundColor = '#a6483ed1';
   } else {
     element.style.left = '-70px';
+    element.style.backgroundColor = '#a6483e86';
   }
 });
 
@@ -171,8 +177,10 @@ window.addEventListener('scroll', function() {
 
   if (scrollPosition > 325*VH && scrollPosition < 480*VH) { 
     element.style.left = '0'; 
+    element.style.backgroundColor = '#a6483ed1';
   } else {
     element.style.left = '-70px';
+    element.style.backgroundColor = '#a6483e86';
   }
 });
 
