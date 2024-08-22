@@ -568,8 +568,8 @@ textarea {
   color: #fff;
   font-size: 24px;
   text-align: center;
-  transition: background-color 0.3s;
 }
+
 
 .social-icons .icon.github {
   background-color: #090909;
@@ -640,4 +640,19 @@ footer p{
   top: 270vh;
   left: 15vw;
   transition: transform 0.35s ease-out;
+}
+
+/* //aniate the icons
+ */
+
+
+.icon {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-50px); /* Initially shifted to the left */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.icon.visible {
+  opacity: 1; /* Make visible */
+  transform: translateX(0); /* Slide to the original position */
 }

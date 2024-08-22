@@ -224,3 +224,22 @@ window.addEventListener('scroll', function() {
   box.style.transform = `translateY(-${moveUp}px)`;
 });
 
+
+function iconsFunc() {
+  const icons = document.querySelectorAll('.icon');
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+          }
+      });
+  });
+
+  icons.forEach(icon => {
+      observer.observe(icon);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setTimeout(iconsFunc,1000));
+
