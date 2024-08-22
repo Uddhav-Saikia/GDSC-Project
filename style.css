@@ -345,7 +345,7 @@ img {
 .slide-container {
     position: absolute;
     top: 20vh;
-    left: 55vw;
+    left: 45vw;
     width: 40vw;
     padding: 20px;
     background-color: var(--background-color-two);
@@ -457,7 +457,7 @@ img {
 .anonymous-messages {
     position: absolute;
     left: 23vw;
-    top: 80vh;
+    top: 70vh;
     max-width: 600px;
     min-width: 50vw;
     margin: auto;
@@ -600,4 +600,29 @@ footer .footer_con {
   left: 2vw;
   height: 19vh;
   width: 95vw;
+}
+
+
+/* animation containers  */
+
+.slide_box_ani {
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+  background-color: #3ab4a4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  top: 60vh;
+  left: 20vw;
+  transition: transform 0.3s ease-out;
+}
+
+#section3 .bar {
+  height: 1vh;
+  width: 25vh;
+  position: absolute;
+  background-color: #293d49;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  top: 280vh;
+  left: 15vw;
+  transition: transform 0.5s ease-in-out;
 }

@@ -182,14 +182,14 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   const box = document.querySelector('.quiz-container');
   const scrollPosition = window.scrollY;
-  const moveUp = scrollPosition * 0.2;
+  const moveUp = scrollPosition * 0.15;
   box.style.transform = `translateY(-${moveUp}px)`;
 });
 
 window.addEventListener('scroll', function() {
   const box = document.querySelector('.slide-container');
   const scrollPosition = window.scrollY;
-  const moveUp = scrollPosition * 0.06;
+  const moveUp = scrollPosition * 0.03;
   let vh=scrollPosition/100;
   if(scrollPosition > 90*vh)
   box.style.transform = `translateX(-${moveUp}px)`;
@@ -198,7 +198,21 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   const box = document.querySelector('.anonymous-messages');
   const scrollPosition = window.scrollY;
+  const moveUp = scrollPosition * 0.1;
+  box.style.transform = `translateY(-${moveUp}px)`;
+});
+
+window.addEventListener('scroll', function() {
+  const box = document.querySelector('.slide_box_ani');
+  const scrollPosition = window.scrollY;
   const moveUp = scrollPosition * 0.15;
+  box.style.transform = `translateY(-${moveUp}px)`;
+});
+
+window.addEventListener('scroll', function() {
+  const box = document.querySelector('.bar');
+  const scrollPosition = window.scrollY;
+  const moveUp = scrollPosition * 0.9;
   box.style.transform = `translateY(-${moveUp}px)`;
 });
 
