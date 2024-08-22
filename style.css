@@ -5,7 +5,22 @@ html,body{
     scroll-behavior: smooth;
     background-color: var(--background-color);
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="%23e3142d"/></svg>') 6 6, auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    overflow: hidden; /* Hide scrollbar */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Disallow horizontal scrolling */
+    
   }
+
+/* to hide the scrollbar
+ */
+
+ body::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  height: 0; /* For horizontal scrollbar */
+}
+
 
 a, button {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" stroke="%236F4840" stroke-width="2" fill="none"/><line x1="6" y1="2" x2="6" y2="10" stroke="%236F4840" stroke-width="2"/><line x1="2" y1="6" x2="10" y2="6" stroke="%236F4840" stroke-width="2"/></svg>') 6 6, auto;
@@ -697,3 +712,4 @@ opens on click */
   opacity: 0;
   pointer-events: none; 
 }
+
