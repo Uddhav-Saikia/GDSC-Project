@@ -11,6 +11,9 @@ a, button {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" stroke="%236F4840" stroke-width="2" fill="none"/><line x1="6" y1="2" x2="6" y2="10" stroke="%236F4840" stroke-width="2"/><line x1="2" y1="6" x2="10" y2="6" stroke="%236F4840" stroke-width="2"/></svg>') 6 6, auto;
 }
 
+.hover {
+  background-color: #28a745;
+}
 
 :root {
     --background-color: #FCF4F0; 
@@ -21,6 +24,7 @@ a, button {
     --text-color-extra: #6F4840;
     --text-color-norm: #7D746F;
     --sidebar-color: #a6483e86;
+    --sidebar-hover:#a6483ed1;
     --progress-bar: #522120e8;
     --footer-color:#502224;
 }
@@ -234,9 +238,9 @@ img {
     font-size: 1rem;
 }
 
-.option :hover {
-    background-color: #090909;
-}
+/* .option :hover {
+    background-color: #090909; 
+} */
 
 #next-btn {
     margin-top: 20px;
@@ -280,6 +284,7 @@ img {
   
   #Sidebar a:hover {
     left: 0; 
+    background-color: var(--sidebar-hover);
   }
   
   #Sidebar a img {
@@ -382,6 +387,10 @@ img {
     z-index: 2;
     font-size: 4em;
     color: var(--background-color);
+  }
+
+  .topright:hover{
+    color: #1877F2;
   }
 
   .next {
@@ -525,6 +534,7 @@ textarea {
   padding: 20px;
   background-color: var(--footer-color);
   color: #fff;
+  position: relative;
 }
 
 .social-icons {
@@ -572,3 +582,17 @@ textarea {
   margin-bottom: 2px;
 }
 
+footer{
+  position: relative;
+}
+
+footer .footer_con {
+  position: absolute;
+  border-radius: 20px 20px 0 0;
+  border: 2px solid var(--background-color);
+  border-bottom-color: var(--footer-color);
+  top:3vh;
+  left: 2vw;
+  height: 19vh;
+  width: 95vw;
+}
