@@ -243,3 +243,11 @@ function iconsFunc() {
 
 document.addEventListener('DOMContentLoaded', setTimeout(iconsFunc,1000));
 
+
+//complete screen overlay (splash screen of sorts)
+const btn = document.querySelector('.overlay.btn');
+
+document.addEventListener('click', function() {
+    const overlay = document.querySelector('.overlay');
+    overlay.classList.remove("hidden"); 
+});

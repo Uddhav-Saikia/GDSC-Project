@@ -195,7 +195,26 @@ img {
   background-color: var(--background-color-three);
   top: 30vh;
   left: 80vw;
+  text-wrap: wrap;
+}
 
+.quiz_info h1{
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 2vw;
+  color: var(--text-color);
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.quiz_info p{
+  position: absolute;
+  max-width: 15vw;
+  font-size: 1.6em;
+  top: 10vh;
+  left: 2vw;
+  color: var(--text-color-extra);
 }
 
 .quiz-container {
@@ -647,12 +666,34 @@ footer p{
 
 
 .icon {
-  opacity: 0; /* Initially hidden */
-  transform: translateX(-50px); /* Initially shifted to the left */
+  opacity: 0;
+  transform: translateX(-50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .icon.visible {
-  opacity: 1; /* Make visible */
-  transform: translateX(0); /* Slide to the original position */
+  opacity: 1; 
+  transform: translateX(0); 
+}
+
+/* complete overlay on 
+website which
+opens on click */
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3498db;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none; 
 }

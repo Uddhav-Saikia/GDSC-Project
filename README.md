@@ -4,17 +4,18 @@
 <!-- add a go to top arrow button (fixed positioning)  -->
 <!-- find better footer designs  -->
 <!-- add shadows to the slideshow -->
-aniamtion in footer
-boxes to explain the quiz with animation in them & animate those shit
-editing the sidenav to be open when a particular section is up
-making the slideshow fit in better with the site basically shift it a lil to right and put some inspo
+<!-- aniamtion in footer -->
+<!-- boxes to explain the quiz with animation in them & animate those shit -->
+<!-- editing the sidenav to be open when a particular section is up -->
+<!-- making the slideshow fit in better with the site basically shift it a lil to right and put some inspo -->
+may apply the splash screen of cannadips
+make a starting veil on the site which opens up and gives you the main site after that
+each link should do the stratis bakas strikethrough ani
 -txt on its left
 media query
-make a starting veil on the site which opens up and gives you the main site after that
-animations all over
-
 night mode
-
+animations all over
+increase numberr of quiz questions
 
 
 
