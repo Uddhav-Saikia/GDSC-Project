@@ -5,11 +5,11 @@ html,body{
     scroll-behavior: smooth;
     background-color: var(--background-color);
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="%23e3142d"/></svg>') 6 6, auto;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-    overflow: hidden; /* Hide scrollbar */
-    overflow-y: scroll; /* Allow vertical scrolling */
-    overflow-x: hidden; /* Disallow horizontal scrolling */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    overflow: hidden; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
     
   }
 
@@ -17,8 +17,8 @@ html,body{
  */
 
  body::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  height: 0; /* For horizontal scrollbar */
+  width: 0; 
+  height: 0; 
 }
 
 
@@ -703,7 +703,7 @@ opens on click */
   width: 100vw;
   height: 100vh;
   background-color: #3498db;
-  z-index: 100;
+  z-index: 1000;
   opacity: 1;
   transition: opacity 1s ease-out;
 }
@@ -713,3 +713,7 @@ opens on click */
   pointer-events: none; 
 }
 
+.hidden {
+  opacity: 0;
+  pointer-events: none; 
+}
