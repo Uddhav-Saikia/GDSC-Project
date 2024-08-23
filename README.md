@@ -10,13 +10,14 @@
 <!-- making the slideshow fit in better with the site basically shift it a lil to right and put some inspo -->
 <!-- may apply the splash screen of cannadips -->
 <!-- make a starting veil on the site which opens up and gives you the main site after that -->
-main screen words animation
 night mode
 media query
 animations all over
 increase numberr of quiz questions
 click svg...add it to the splash screen.
-each link should do the stratis bakas strikethrough ani txt on its left
+<!-- each link should do the stratis bakas strikethrough ani txt on its left -->
+there are circles etc everywhere n they move 
+
 
 ********animations********: 
 copy some from stratis bakas

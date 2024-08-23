@@ -6,6 +6,10 @@ function animate(){
 
 }
 
+//DARK MODE
+
+
+
 //complete screen overlay (splash screen of sorts)
 let fl=1;
 let splashScreen = document.getElementById('splash');
