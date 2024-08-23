@@ -1,3 +1,19 @@
+
+//complete screen overlay (splash screen of sorts)
+let fl=1;
+let splashScreen = document.getElementById('splash');
+splashScreen.addEventListener('click',()=>{
+  setTimeout(()=>{
+    splashScreen.style.opacity=0;
+    fl=0;
+  },100)
+})
+
+if(fl==0){
+  splashScreen.style.display="none";
+  splashScreen.outerHTML="";
+}
+
 //for the thing on top...like progress bar types
 window.onscroll = function() {myFunction()};
 
@@ -243,5 +259,3 @@ function iconsFunc() {
 
 document.addEventListener('DOMContentLoaded', setTimeout(iconsFunc,1000));
 
-
-//complete screen overlay (splash screen of sorts)

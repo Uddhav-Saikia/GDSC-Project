@@ -4,23 +4,8 @@ html,body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: var(--background-color);
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="%23e3142d"/></svg>') 6 6, auto;
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-    overflow: hidden; 
-    overflow-y: scroll; 
-    overflow-x: hidden; 
-    
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="6" fill="%23e3142d"/></svg>') 6 6, auto;    
   }
-
-/* to hide the scrollbar
- */
-
- body::-webkit-scrollbar {
-  width: 0; 
-  height: 0; 
-}
-
 
 a, button {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5" stroke="%236F4840" stroke-width="2" fill="none"/><line x1="6" y1="2" x2="6" y2="10" stroke="%236F4840" stroke-width="2"/><line x1="2" y1="6" x2="10" y2="6" stroke="%236F4840" stroke-width="2"/></svg>') 6 6, auto;
@@ -65,6 +50,7 @@ hr{
 #section3 {
     background-color: var(--background-color);
     margin-bottom: 10vh;
+    overflow:visible;
     /* margin-top: 5vh; */
 }
 
@@ -691,3 +677,45 @@ footer p{
   transform: translateX(0); 
 }
 
+/* complete overlay on 
+website which
+opens on click */
+
+.splash{
+  position : fixed;
+  top : 50%;
+  left : 50%;
+  height : 100vh;
+  width : 100vw;
+  transform : translate(-50%,-50%);    
+  background-color: var(--background-color);
+  transition : all ease-in-out 600ms;
+  z-index: 3;
+}
+
+.splash-header {
+  height : 90%;
+  color : var(--text-color);
+  font-family : "consolas";
+  font-size : 4em;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
+
+.splash p {
+  position: absolute;
+  top: -4vh;
+  left: 1vw;
+  height : 10%;
+  color : var(--text-color);
+  font-family : "consolas";
+  font-size : 2em;
+  /* display : flex;
+  justify-content: center;
+  align-items : center; */
+}
+
+.splash .b{
+  top: 0vh;
+}
