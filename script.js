@@ -1,18 +1,20 @@
+//animation on text appearance
+
+function animate(){
+  document.getElementById("main_head").style.opacity=1;
+  document.getElementById("main_head").style.transform='translateX(0px)';  
+
+}
 
 //complete screen overlay (splash screen of sorts)
 let fl=1;
 let splashScreen = document.getElementById('splash');
 splashScreen.addEventListener('click',()=>{
-  setTimeout(()=>{
-    splashScreen.style.opacity=0;
-    fl=0;
-  },100)
+  animate();
+  splashScreen.remove();
 })
 
-if(fl==0){
-  splashScreen.style.display="none";
-  splashScreen.outerHTML="";
-}
+
 
 //for the thing on top...like progress bar types
 window.onscroll = function() {myFunction()};
@@ -236,7 +238,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
   const box = document.querySelector('.bar');
   const scrollPosition = window.scrollY;
-  const moveUp = scrollPosition * 0.9;
+  const moveUp = scrollPosition * 0.5;
   box.style.transform = `translateY(-${moveUp}px)`;
 });
 
@@ -257,5 +259,5 @@ function iconsFunc() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', setTimeout(iconsFunc,1000));
+document.addEventListener('DOMContentLoaded', () => setTimeout(iconsFunc(),1000));
 

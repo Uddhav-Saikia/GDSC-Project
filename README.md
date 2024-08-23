@@ -8,16 +8,15 @@
 <!-- boxes to explain the quiz with animation in them & animate those shit -->
 <!-- editing the sidenav to be open when a particular section is up -->
 <!-- making the slideshow fit in better with the site basically shift it a lil to right and put some inspo -->
-may apply the splash screen of cannadips
-make a starting veil on the site which opens up and gives you the main site after that
-each link should do the stratis bakas strikethrough ani
--txt on its left
-media query
+<!-- may apply the splash screen of cannadips -->
+<!-- make a starting veil on the site which opens up and gives you the main site after that -->
+main screen words animation
 night mode
+media query
 animations all over
 increase numberr of quiz questions
-
-
+click svg...add it to the splash screen.
+each link should do the stratis bakas strikethrough ani txt on its left
 
 ********animations********: 
 copy some from stratis bakas

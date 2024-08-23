@@ -54,6 +54,10 @@ hr{
     /* margin-top: 5vh; */
 }
 
+#section4 {
+  overflow: hidden;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -126,10 +130,12 @@ section{
     font-size: 8em;
     color: var(--text-color-secondary);
     margin: 0px;
-
+    opacity:0;
     font-family: "PT Serif", serif;
     font-weight: 100;
     font-style: italic;
+    transform: translateX(100px);
+    transition: transform 0.5s, opacity 0.3s ease-out;
 }
 
 .txt h1 p{
@@ -146,6 +152,7 @@ section{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+
 }
 
 .txt p{
@@ -571,6 +578,7 @@ textarea {
   background-color: var(--footer-color);
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .social-icons {
@@ -657,7 +665,7 @@ footer p{
   position: absolute;
   background-color: #293d49;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  top: 270vh;
+  top: 160vh;
   left: 15vw;
   transition: transform 0.35s ease-out;
 }
@@ -669,7 +677,7 @@ footer p{
 .icon {
   opacity: 0;
   transform: translateX(-50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .icon.visible {
