@@ -30,17 +30,17 @@ a, button {
     --footer-color: var(--background-color-three);
 }
 
-.dark-mode{
-  --background-color: #FCF4F0; 
-  --background-color-three: #b891832f;
-  --background-color-two: #b891833a;
-  --text-color: #A6483E;
-  --text-color-secondary: #5F2321;
-  --text-color-extra: #6F4840;
+body.dark-mode{
+  --background-color: #1e246b; 
+  --background-color-three: #181d53;
+  --background-color-two: #1b2160;
+  --text-color: #ffffff;
+  --text-color-secondary: #f4dcdb;
+  --text-color-extra: #ae9893;
   --text-color-norm: #7D746F;
-  --sidebar-color: #a6483e86;
-  --sidebar-hover:#a6483ed1;
-  --progress-bar: rgb(67, 67, 237);
+  --sidebar-color: #592b63;
+  --sidebar-hover:#44234c;
+  --progress-bar: rgb(178, 30, 30);
   --footer-color: var(--background-color-three);
 }
 
