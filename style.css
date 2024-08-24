@@ -26,24 +26,34 @@ a, button {
     --text-color-norm: #7D746F;
     --sidebar-color: #a6483ed1;
     --sidebar-hover:#883d35d1;
-    --sidebar-color-dark: #733279;
-    --sidebar-hover-dark:#6a2884d1;
+    --sidebar-color-dark: #1F2937;
+    --sidebar-hover-dark:#1F2937;
     --progress-bar: rgb(67, 67, 237);
     --footer-color: var(--background-color-three);
+    --textarea-color:white;
+    --paragraph-color: black;
+    --paragraph-color-head:var(--background-color);
 }
 
 body.dark-mode{
   --background-color: #111827; 
   --background-color-three: #1F2937;
   --background-color-two: #1F2937;
-  --sidebar-color: #733279;
-  --sidebar-hover:#6a2884d1;
-  --text-color: #D1D5DB;
-  --text-color-secondary: #f4dcdb;
+  --sidebar-color: #1F2937;
+  --sidebar-hover:#1F2937;
+  --text-color: #A6483E;
+  --text-color-secondary: #5F2321;
   --text-color-extra: #ae9893;
   --text-color-norm: #7D746F;
   --progress-bar: #0D9488;
   --footer-color: var(--background-color-three);
+  --textarea-color:rgb(194, 213, 230);
+  --paragraph-color: white;
+  --paragraph-color-head: white;
+}
+
+p {
+  color: var(--paragraph-color);
 }
 
 .bar_one{
@@ -194,7 +204,7 @@ section{
     top: 45vh;
     left: 20vw;
     font-size: 2.6em;
-    color: var(--background-color);
+    color: var(--paragraph-color-head);
     margin: 0;
     padding: 0;
 }
@@ -202,7 +212,7 @@ section{
 #life {
     position: absolute;
     font-size: 2.6em;
-    color: var(--background-color);
+    color: var(--paragraph-color-head);
     top: 62vh;
     left: 48vw;
 }
@@ -575,6 +585,7 @@ textarea {
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background-color: var(--textarea-color);
 }
 
 .anonymous-messages button {
@@ -681,7 +692,7 @@ footer .footer_con {
 }
 
 footer p{
-  color: #090909;
+  color: var(--paragraph-color);
 }
 
 
@@ -742,7 +753,7 @@ opens on click */
 
 .splash-header {
   height : 90%;
-  color : var(--text-color);
+  color : var(--paragraph-color-head);
   font-family : "consolas";
   font-size : 4em;
   display : flex;
@@ -755,7 +766,7 @@ opens on click */
   top: -4vh;
   left: 1vw;
   height : 10%;
-  color : var(--text-color);
+  color : var(--paragraph-color);
   font-family : "consolas";
   font-size : 2em;
   /* display : flex;
