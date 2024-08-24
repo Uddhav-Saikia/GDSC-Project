@@ -31,8 +31,8 @@ a, button {
     --progress-bar: rgb(67, 67, 237);
     --footer-color: var(--background-color-three);
     --textarea-color:white;
-    --paragraph-color: black;
-    --paragraph-color-head:var(--background-color);
+    --paragraph-color: var(--text-color);
+    --paragraph-color-head:var(--text-color);
 }
 
 body.dark-mode{
