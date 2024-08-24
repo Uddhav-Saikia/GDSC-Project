@@ -171,14 +171,14 @@ window.addEventListener('scroll', function() {
     element.style.left = '0'; 
     element.style.backgroundColor = '#a6483ed1'; 
     if (localStorage.getItem('theme') === 'dark') {
-      var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color');
+      var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color-dark');
       element.style.backgroundColor = col_1; 
 	}
   } else {
     element.style.left = '-70px';
     element.style.backgroundColor = '#a6483e86';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   }
@@ -194,14 +194,14 @@ window.addEventListener('scroll', function() {
     element.style.left = '0'; 
     element.style.backgroundColor = '#a6483ed1';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar_color');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   } else {
     element.style.left = '-70px';
     element.style.backgroundColor = '#a6483e86';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   }
@@ -217,14 +217,14 @@ window.addEventListener('scroll', function() {
     element.style.left = '0'; 
     element.style.backgroundColor = '#a6483ed1';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   } else {
     element.style.left = '-70px';
     element.style.backgroundColor = '#a6483e86';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   }
@@ -240,14 +240,14 @@ window.addEventListener('scroll', function() {
     element.style.left = '0'; 
     element.style.backgroundColor = '#a6483ed1';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-color-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   } else {
     element.style.left = '-70px';
     element.style.backgroundColor = '#a6483e86';
 	if (localStorage.getItem('theme') === 'dark') {
-		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover');
+		var col_1 = window.getComputedStyle(document.documentElement).getPropertyValue('--sidebar-hover-dark');
 		element.style.backgroundColor = col_1; 
 	  }
   }
