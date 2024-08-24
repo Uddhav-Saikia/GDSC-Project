@@ -8,7 +8,22 @@ function animate(){
 
 //DARK MODE
 
+document.addEventListener('DOMContentLoaded', () => {
+  const switchInput = document.getElementById('Switch');
 
+  // Check localStorage for saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      switchInput.checked = true;
+  }
+
+  // Toggle dark mode on switch change
+  switchInput.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+      // Save the theme in localStorage
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+  });
+});
 
 //complete screen overlay (splash screen of sorts)
 let fl=1;

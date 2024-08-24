@@ -30,6 +30,20 @@ a, button {
     --footer-color: var(--background-color-three);
 }
 
+.dark-mode{
+  --background-color: #FCF4F0; 
+  --background-color-three: #b891832f;
+  --background-color-two: #b891833a;
+  --text-color: #A6483E;
+  --text-color-secondary: #5F2321;
+  --text-color-extra: #6F4840;
+  --text-color-norm: #7D746F;
+  --sidebar-color: #a6483e86;
+  --sidebar-hover:#a6483ed1;
+  --progress-bar: rgb(67, 67, 237);
+  --footer-color: var(--background-color-three);
+}
+
 .bar_one{
   height: 10vh;
   position: relative;
@@ -761,7 +775,7 @@ opens on click */
 
 .switch {
     display: inline-block;
-    position: relative;
+    position: fixed;
     left:85vw;
     top: 5vh;
 }
