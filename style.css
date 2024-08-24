@@ -33,6 +33,8 @@ a, button {
     --textarea-color:white;
     --paragraph-color: var(--text-color);
     --paragraph-color-head:var(--text-color);
+    --paragraph-color-hero:#FCF4F0;
+
 }
 
 /* edit */
@@ -52,6 +54,7 @@ body.dark-mode{
   --textarea-color:rgb(194, 213, 230);
   --paragraph-color: white;
   --paragraph-color-head: white;
+  --paragraph-color-hero:#FCF4F0;
 }
 
 p {
@@ -206,7 +209,7 @@ section{
     top: 45vh;
     left: 20vw;
     font-size: 2.6em;
-    color: var(--paragraph-color-head);
+    color: var(--paragraph-color-hero);
     margin: 0;
     padding: 0;
 }
