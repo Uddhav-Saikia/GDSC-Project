@@ -35,6 +35,8 @@ a, button {
     --paragraph-color-head:var(--text-color);
 }
 
+/* edit */
+
 body.dark-mode{
   --background-color: #111827; 
   --background-color-three: #1F2937;
