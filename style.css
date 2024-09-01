@@ -30,6 +30,7 @@ a, button {
     --sidebar-hover-dark:#1F2937;
     --progress-bar: rgb(67, 67, 237);
     --footer-color: var(--background-color-three);
+    --footer-box-color: var(--sidebar-color);
     --textarea-color:white;
     --paragraph-color: var(--text-color);
     --paragraph-color-head:var(--text-color);
@@ -51,6 +52,7 @@ body.dark-mode{
   --text-color-norm: #7D746F;
   --progress-bar: #0D9488;
   --footer-color: var(--background-color-three);
+  --footer-box-color: #FCF4F0;
   --textarea-color:rgb(194, 213, 230);
   --paragraph-color: white;
   --paragraph-color-head: white;
@@ -688,7 +690,7 @@ footer{
 footer .footer_con {
   position: absolute;
   border-radius: 20px 20px 0 0;
-  border: 2px solid var(--sidebar-color);
+  border: 2px solid var(--footer-box-color);
   border-bottom-color: var(--footer-color);
   top:3vh;
   left: 2vw;
