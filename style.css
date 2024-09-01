@@ -84,7 +84,7 @@ hr{
 
 #section3 {
     background-color: var(--background-color);
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     overflow:visible;
     /* margin-top: 5vh; */
 }
@@ -535,12 +535,12 @@ img {
     width: 16.66%;
   }
   
-  .demo {
+  .img_slide_data {
     opacity: 0.6;
   }
   
   .active,
-  .demo:hover {
+  .img_slide_data:hover {
     opacity: 1;
   }
 
@@ -551,7 +551,7 @@ img {
 .anonymous-messages {
     position: absolute;
     left: 23vw;
-    top: 70vh;
+    top: 65vh;
     max-width: 600px;
     min-width: 50vw;
     margin: auto;
@@ -569,7 +569,7 @@ img {
 .last h1 {
   position: absolute;
   left:40vw;
-  top:10vh;
+  top:5vh;
   font-size: 4em;
   color: var(--text-color-extra);
 
@@ -632,10 +632,12 @@ textarea {
  footer {
   text-align: center;
   padding: 20px;
+  padding-bottom: 0;
   background-color: var(--footer-color);
   color: #fff;
   position: relative;
   overflow: hidden;
+  /* top: 6vh; */
 }
 
 .social-icons {
@@ -814,8 +816,8 @@ opens on click */
 .switch__label {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 30px;
+    width: 45px;
+    height: 22.5px;
     background-color: #2B2B2B;
     border: 5px solid #5B5B5B;
     border-radius: 9999px;
@@ -829,14 +831,14 @@ opens on click */
     left: 50%;
     transform: translate(-50%, -50%) translateX(-72%);
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 22.5px;
+    height: 22.5px;
     background-color: #7B7B7B;
     border-radius: 9999px;
     box-shadow: 10px 0px 0 0 rgba(#000000, 0.2) inset;
 
-    &::before,
-    &::after {
+    ::before,
+    ::after {
         position: absolute;
         content: '';
         display: block;
@@ -844,7 +846,7 @@ opens on click */
         border-radius: 9999px;
     }
 
-    &::before {
+    ::before {
         top: 7px;
         left: 7px;
         width: 9px;
@@ -853,7 +855,7 @@ opens on click */
         opacity: 0.6;
     }
 
-    &::after {
+    ::after {
         bottom: 8px;
         right: 6px;
         width: 14px;
@@ -874,8 +876,8 @@ opens on click */
     border-radius: 9999px;
     animation: twinkle 0.8s infinite -0.6s;
 
-    &::before,
-    &::after {
+    ::before,
+    ::after {
         position: absolute;
         display: block;
         content: '';
@@ -885,14 +887,14 @@ opens on click */
         border-radius: 9999px;
     }
 
-    &::before {
+    ::before {
         top: -20px;
         left: 10px;
         opacity: 1;
         animation: twinkle 0.6s infinite;
     }
 
-    &::after {
+    ::after {
         top: -7px;
         left: 30px;
         animation: twinkle 0.6s infinite -0.2s;
@@ -904,9 +906,9 @@ opens on click */
 }
 
 .switch__indicator {
-    &,
-    &::before,
-    &::after {
+    
+    ::before,
+    ::after {
         transition: all 0.4s cubic-bezier(.46,.03,.52,.96);
     }
 }
@@ -920,8 +922,8 @@ opens on click */
         box-shadow: none;
         transform: translate(-50%, -50%) translateX(72%);
 
-        &::before,
-        &::after {
+        ::before,
+        ::after {
             display: none;
         }
     }
@@ -934,31 +936,31 @@ opens on click */
         width: 20px;
         height: 20px;
 
-        &::before {
-            width: 10px;
-            height: 10px;
+        ::before {
+            width: 15px;
+            height: 15px;
             top: auto;
             bottom: 0;
             left: -8px;
             animation: none;
         }
 
-        &::after {
-            width: 15px;
-            height: 15px;
+        ::after {
+            width: 5px;
+            height: 5px;
             top: auto;
             bottom: 0;
             left: 16px;
             animation: none;
         }
 
-        &,
-        &::before,
-        &::after {
+        
+        ::before,
+        ::after {
             border-radius: 9999px 9999px 0 0;
         }
 
-        &::after {
+        ::after {
             border-bottom-right-radius: 9999px;
         }
     }
